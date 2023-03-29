@@ -1,0 +1,8 @@
+Un estudiante de programación intentó realizar declaraciones de variables con sus respectivos tipos en Go, pero tuvo varias dudas mientras lo hacía. A partir de esto, nos brindó su código y pidió la ayuda de un desarrollador experimentado que pueda:
+Verificar su código y realizar las correcciones necesarias.
+
+  var apellido string = "Gomez" // Es correcto
+  var edad int = "35" // está mal debería ir sin ""
+  boolean := "false"; // Es correcto 
+  var sueldo string = 45857.90 // Es falso debería ser un float64
+  var nombre string = "Julián" // Correcto

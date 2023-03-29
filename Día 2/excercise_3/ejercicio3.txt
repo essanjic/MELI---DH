@@ -1,0 +1,11 @@
+Un profesor de programación está corrigiendo los exámenes de sus estudiantes de la materia Programación I para poder brindarles las correspondientes devoluciones. Uno de los puntos del examen consiste en declarar distintas variables. 
+Necesita ayuda para:
+Detectar cuáles de estas variables que declaró el alumno son correctas.
+Corregir las incorrectas.
+    var 1nombre string                  //incorrecta porque una variable no debe iniciar declarada en número
+    var apellido string                 //correcta :)
+    var int edad                        //correcta :)
+    1apellido := 6                      // incorrecta porque una variable no debe iniciar declarada en número
+    var licencia_de_conducir = true     //incorrecta porque una variable no puede ir en snake_case
+    var estatura de la persona int      //incorrecta porque una variable no se puede definir con espacios
+    cantidadDeHijos := 2                //correcta :)
