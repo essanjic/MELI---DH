@@ -26,7 +26,7 @@ func main() {
 	// Comprobamos si el valor de salary es menor o igual a 10000
 	if salary <= 10000 {
 		// Creamos un nuevo error personalizado de tipo salaryError con el mensaje indicado
-		err := &salaryError{"Error: el salario es menor a 10.000"}
+		err := &salaryError{"error: el salario es menor a 10.000"}
 
 		// Usamos la función Is() de la librería errors para comprobar si el error es de tipo salaryError
 		if errors.Is(err, &salaryError{}) {
