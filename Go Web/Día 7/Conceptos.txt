@@ -1,0 +1,36 @@
+## API REST
+
+API: Aplication program interface
+API-REST: Implementación de la interface según la arquitectura
+REST: Arquitectura o guía para determinar cómo hacer sobre la web compuesta
+Recurso en API: Información que una aplicación proporciona a un cliente
+
+Las solicitudes o recursos se hacen mediante un formato de archivo llamado JSON desde el REST
+JSON: JavaScript Object Notation, es un objeto como se crea en JavaScript, como si fuera un map.
+        1.Se constituye como un hashmap
+        2. Tiene un Key Value, y su Value
+        3. puede recibir un objeto, array, números, string
+        4. Son estructuras universales, independientes del lenguaje de programación 
+
+Beneficios REST: Estandariza los procesos, entonces los hace más intuitivos y escalables
+
+
+Para trabajar con API hay muchas formas, pero se usará la herramienta de POSTMAN, es un cliente de Http.
+
+POSTMAN: Es una aplicación utilizada para pruebas de APIs webs.
+         Una de sus funciones es similar un cliente REST con el que podremos enviar peticiones a nuestra aplicación y ver cómo responde
+         
+hay un paquete en Go que se llama JSON, es una librería que nos permite transformar estructuras de forma bidireccional
+
+El primer método es Marshal .Marshal()
+
+Marshal: Es una forma de codificación de parseo, o conversión de un tipo a otro.
+
+La función Marshal (v interface{}) ([]byte, error) toma como parámetro un valor de cualquier tipo, y retorna una slice de bytes que contiene su representación en formato JSON. También retorna un error en caso de encontrar uno.
+
+    En caso de querer usar json.Marshal() y pasar un struct como parámetro,
+    los campos a transformar a JSON tienen que estar exportados, es decir,
+    en mayúsculas.
+
+
+    

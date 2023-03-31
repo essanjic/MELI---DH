@@ -9,5 +9,7 @@ func main() {
 	cantidadLetras := len(palabra[0])
 
 	fmt.Println("La cantidad de letras que tiene la palabra son:", cantidadLetras)
-	fmt.Println(palabra[0][0:])
+	for i := 0; i < cantidadLetras; i++ {
+		fmt.Println("La letra", i+1, "es:", palabra[0][i])
+	}
 }
