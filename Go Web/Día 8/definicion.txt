@@ -1,0 +1,4 @@
+# 
+
+#Body 
+Mediante el body podemos enviar información adicional junto con la petición, por ejemplo recursos para que nuestra API cumpla la lógica de negocio. Suele estar en formato JSON o texto.

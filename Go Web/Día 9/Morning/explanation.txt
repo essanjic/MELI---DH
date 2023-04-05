@@ -1,0 +1,17 @@
+## PUT
+Es una característica idempotente, la idea es que PUT hace una solicitud para "Actualizar" un recurso existente, reemplazándolo en su totalidad por otro recurso nuevo.
+
+
+## PATCH
+Este es una actualización parcial, cambia una parte del recurso, no todo el recurso, si se quiere el recurso completo es necesario cambiarlo en el PUT. Puede ser idempotente o no
+por ejemplo; si quiere que sea incremental un contador, o vista.
+
+# - "Parchea" el recurso
+# - La solicitud no contiene un recurso completo, sino unicamente las propiedades a modificar del recurso que se trate.
+
+## Delete
+Se utiliza para indicarle a un servidor o solicitarle que elimine un recurso existente en la ubiación que indica la URL.
+
+No es necesario pasarle un cuerpo, solo el header con la URL de la solicitud, es idempotente.
+
+

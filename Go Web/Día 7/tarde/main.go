@@ -43,8 +43,7 @@ func main() {
 	router.GET("/products", getAll)
 	router.GET("/products/:id", getById)
 	router.GET("/products/search", searchBy)
-	router.Run(":8081")
-}
+	router.Run(":8080") }
 
 func obtainData() error {
 	file, err := os.Open("products.json")
