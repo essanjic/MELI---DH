@@ -1,0 +1,19 @@
+## Elementos de una API Rest
+
+## ¿Qué es un API Gateway?
+
+1. El cliente primero tiene que comunicarse mediante una REQUEST, pasa al controlador, el controlador recibe la petición y la envía al servicio correspondiente.
+
+2. El servicio recibe la petición, hace la lógica y se comunica con el repositorio o servidor de datos.
+
+3. El repositorio se comunica con la base de datos y devuelve la respuesta al servicio.
+
+4. El servicio cumple la lógica y define si la petición se cumplió o no.
+
+5. El controlador devuelve la petición, ya sea de forma exitosa o con error.
+
+6. El cliente recibe la respuesta y la muestra en pantalla.
+
+
+## Test Funcionales
+
