@@ -1,0 +1,17 @@
+## Bases Clase 1
+
+## Variables
+Las variables se declaran con var, las variables en Golang, se usan de manera global dentro de los packages, por lo que no es necesario declararlas en el main, si no que se pueden declarar en cualquier parte del código, y se pueden usar en cualquier parte del código, siempre y cuando estén dentro del mismo package.
+
+Las variables cuando se definen de forma global y van por fuera de los packages o se quieran exportar deben iniciar en mayúscula, es como si fueran públicas es decir se pueden exportar.
+
+## Modulo 
+
+Es una colección de paquetes, nos permite controlar las versiones de los paquetes de Go. Son paquetes organizados para definir un programa.
+
+## Go Mod
+Es un archivo que define un módulo y sus dependencias. Es un archivo de texto que contiene información sobre los módulos de Go que se usan en un proyecto.
+
+## Paquetes
+Los packages son como los módulos, pero son más pequeños, son como los archivos de código, que se pueden importar en otros archivos de código, para poder usar sus funciones, variables, etc.
+
