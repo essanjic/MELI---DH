@@ -1,0 +1,11 @@
+## Funciones
+
+## Scopes
+Se conocen como ámbito, se definen por las funciones dentro de las llaves que componen un bloque, solo se puede acceder a las variables declaradas a través de las llaves de la función.
+
+Las variables locales: Solo se pueden utilizar por declaraciones dentro de las llaves.
+Varibales globales: Se definen fuera de las llaves, se pueden acceder desde cualquier parte del código.
+
+Parámetros formales: Se tratan como variables locales dentro de esa funcion y tienen preferencia sobre las variables globales.
+
+En Go se pueden tener funciones con múltiples retornos y se pueden retornar valores de cualquier tipo.
