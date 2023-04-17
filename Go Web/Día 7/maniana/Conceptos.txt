@@ -33,4 +33,6 @@ La función Marshal (v interface{}) ([]byte, error) toma como parámetro un valo
     en mayúsculas.
 
 
-    
+## Endpoint
+
+Partes de URL o API que responde una solicitud de datos

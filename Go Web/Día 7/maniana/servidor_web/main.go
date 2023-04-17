@@ -1,16 +1,16 @@
 package main
 
-import {
-	"github.com/gin-gonic/gin"
-}
+import "net/http"
 
 func main() {
+	var err error
+	mux := http.NewServeMux() // multiplexor or router
 
-	router := http.NewServeMux() //multiplexor de peticiones, es un manejador de peticiones, las lleva a un recurso especifico
-
-	router.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	//Asociar una ruta con una función
+	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Pong"))
 	})
-
-	http.ListenAndServe(":8080", router) // escucha en el puerto 8080 y le pasa el multiplexor de peticiones
+	if err = http.ListenAndServe(":8081", mux); err != nil {
+		panic(err)
+	}
 }

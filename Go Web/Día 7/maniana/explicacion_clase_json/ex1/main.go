@@ -46,7 +46,7 @@ func main() {
 		},
 	}
 
-	userAsJSON, err := json.MarshalIndent(user, "", "  ")
+	userAsJSON, err := json.Marshal(user)
 	if err != nil {
 		panic(err)
 	}
