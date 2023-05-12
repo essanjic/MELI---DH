@@ -1,6 +1,8 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -22,11 +24,29 @@ type Saludo struct {
 	Apellido string `json:"apellido"`
 }
 
+var data = []Saludo{
+	{Nombre: "Andrea", Apellido: "Rivas"},
+}
+
+func PostSaludo(ctx *gin.Context) {
+	var saludo Saludo
+	ctx.BindJSON(&saludo)
+
+	saludo = Saludo{
+		Nombre:   saludo.Nombre,
+		Apellido: saludo.Apellido,
+	}
+	data = append(data, saludo)
+
+	ctx.IndentedJSON(http.StatusCreated, saludo)
+}
+
 func main() {
+	//var err error
 	router := gin.Default()
-	router.POST("/saludo", func(ctx *gin.Context) {
-		var saludo Saludo
-		ctx.BindJSON(&saludo)
-		ctx.Request.Body.Close()
-	})
+	router.POST("/saludo", ctx *gin.Context); err  {
+		ctx.String(http.StatusOK, "Hola "+saludo.Nombre+" "+saludo.Apellido)
+ }
+	router.Run(":8084")
+
 }

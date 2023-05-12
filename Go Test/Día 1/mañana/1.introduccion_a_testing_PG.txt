@@ -1,0 +1,156 @@
+## 1. ¿Qué es la calidad de software?
+    Tiene que ver con los conceptos, los métodos, las técnicas, los procedimientos y los estándares necesarios para producir productos y procesos software de alta calidad.
+
+
+    ¿Qué es calidad?
+    "Es el grado con el que un sistema, componente o proceso cumple los requisitos especificados y las necesidades o expectativas del cliente o usuario" IEEE
+
+    *Visión de calidad*
+
+    Los requerimientos en un software pueden ser "funcionales" (Qué) o "no funcionales" (Cómo)
+
+    Cumplir con los requerimientos funcionales nos ayuda a saber si desde la perspectiva del cliente, el software tiene buena calidad. Por otro lado, cumplir con los no funcionales nos permite comprender la calidad desde una perspectiva más ingenieril. Para poder medir la calidad de un software de una manera más holística es que agrupamos los requerimientos en <<dimensiones de calidad>>.
+
+    ###Requerimientos
+
+    * Funcionales
+    - Autenticar constraseñas de login.
+    - Diferenciar roles de perfil de usuario.
+    - Identificar la extensión de los archivos a subir.
+    - Saber qué mostrar en el front y que no.
+
+    * No funcionales
+    - Interfaz de usuario amigable e intuitiva.
+    - Que tenga versión mobile.
+    - Relación tiempo y recursos optimizado (rendimiento).
+    - Que esté disponible 24/7.
+    - Tiempo de respuesta.
+
+    ## Eficacia vs Eficiencia
+    Mientras la eficacia (qué) busca el cumplimiento de un objetivo de la forma más directa posible, centrándose en el resultado y sin tener en cuenta los medios o recursos necesarios para lograrlo, la eficiencia (cómo) busca el cumplimiento de un objetivo con el mínimo de recursos posibles, centrándose en los medios o recursos necesarios para lograrlo y sin tener en cuenta el resultado, su resolución deberá hacer uso de la cantidad de recursos óptima.
+
+
+    De esta manera, nuestro código mantendrá un nivel estándar alto de eficiencia, eficacia, seguridad, mantenibilidad y escalabilidad.
+
+## 2. Dimensiones de la calidad
+    Cuando hablamos de calidad, nos referimos a métodos, técnicas y estándares necesarios para producir productos y procesos software de alta calidad. 
+    
+    En la industria existen diversos estándares que enumeran las dimensiones a considerar para evaluar la calidad de un software. Por ejemplo el ISO/IEC 25010:2011, el cual define 8 dimensiones de calidad.
+
+    1. Funcionalidad (Functionality )
+    Representa la capacidad del producto software para proporcionar funciones que satisfacen las necesidades declaradas e implícitas, cuando el producto software se utiliza en las condiciones especificadas. Esta característica se refiere a la capacidad del software para proporcionar funciones que satisfacen las necesidades declaradas e implícitas, cuando el software se utiliza en las condiciones especificadas.
+    Se subdivide en:
+    1.1 Completitud funcional (Functional completeness)
+        Grado en el cual el conjunto de funcionalidades cubre todas las tareas y objetivos del usuario especificados.
+    1.2 Corrección funcional (Functional correctness)
+        Capacidad del producto o sistema software para proporcionar los resultados correctos con el nivel de precisión requerido.
+    1.3 Pertinencia funcional (Functional appropriateness)
+        Capacidad del producto software para proporcionar un conjunto apropiado de funciones para tareas y objetivos específicos de usuario.
+
+    2. Rendimiento (Performance efficiency)
+    Esta característica representa el desempeño relativo a la cantidad de recursos utilizados bajo determinadas condiciones. Se subdivide en:
+    2.1 Comportamiento temporal (Time behavior)
+        Capacidad del producto software para proporcionar los resultados correctos en los tiempos adecuados. Los tiempos de respuesta y procesamiento y los ratios de throughput de un sistema cuando lleva a cabo sus funciones bajo condiciones determinadas en relación con un banco de pruebas (benchmark) establecido.
+    2.2 Utilización de recursos (Resource utilization)
+        Las cantidades y tipos de recursos utilizados cuando el software lleva a cabo su función bajo condiciones determinadas.
+    2.3 Capacidad (Capacity)
+        Capacidad del software para proporcionar un número adecuado de funciones o transacciones en relación con la cantidad de recursos utilizados bajo condiciones determinadas.
+        Grado en que los límites máximos de un parámetro de un producto o sistema software cumplen con los requisitos.
+    
+    3. Fiabilidad (Reliability)
+    Capacidad de un sistema o componente para desempeñar sus funciones requeridas bajo condiciones especificadas durante un periodo de tiempo determinado. Se subdivide en:
+    3.1 Madurez (Maturity)
+        Capacidad del producto software para evitar fallos relacionados con defectos en el software. Satisface las necesidades de fiabilidad en condiciones normales de operación.
+    3.2 Disponibilidad (Availability)
+        Capacidad del producto software para estar operativo y accesible para su uso cuando se requiere. Satisface las necesidades de fiabilidad en condiciones de fallo.
+    3.3 Tolerancia a fallos (Fault tolerance)
+        Capacidad del producto software para mantener un nivel especificado de rendimiento en caso de fallo de un componente de hardware o software. Trabaja según lo esperado en caso de fallo de un componente.
+    3.4 Recuperabilidad (Recoverability)
+        Capacidad del producto software para restablecer el nivel de rendimiento y recuperar los datos directamente afectados en caso de fallo y restablecer el nivel de rendimiento y recuperar los datos directamente afectados, cuando se produce un fallo.
+
+    4. Seguridad (Security)
+    Capacidad del producto software para proteger la información y los datos de modo que las personas o sistemas que no tienen autorización no puedan acceder a ellos para leerlos, modificarlos o destruirlos. Se subdivide en:
+    4.1 Confidencialidad (Confidentiality)
+        Capacidad del producto software para asegurar que la información y los datos son accesibles sólo para aquellos con autorización.
+    4.2 Integridad (Integrity)
+        Capacidad del producto software para asegurar que la información y los datos son modificados sólo por aquellos con autorización. Previene accesos o modificaciones no autorizados a datos o programas de ordenador.
+    4.3 No repudio (Non-repudiation)
+        Capacidad del producto software para asegurar que las acciones o eventos tienen lugar de tal manera que los participantes (usuarios) no puedan negar que estos han tenido lugar.
+    4.4 Responsabilidad (Accountability)
+        Capacidad del producto software para registrar información sobre los eventos que han tenido lugar, de tal manera que los participantes (usuarios) puedan ser responsables de estos eventos. De igual forma poder rastrear las acciones de un usuario.
+    4.5 Autenticidad (Authenticity)
+        Capacidad del producto software para asegurar que la identidad de un sujeto o recurso es la que se pretende o declara. Se refiere a la capacidad de asegurar que la identidad de un sujeto o recurso es la que se pretende o declara.
+
+    5. Mantenibilidad (Maintainability)
+    Esta característica representa la capacidad del producto software para ser modificado efectuva y eficientemente, debido a necesidades evolutivas, correctivas o perfectivas. Se subdivide en:
+
+    5.1 Modularidad (Modularity)
+        Capacidad del producto software para ser compuesto de componentes separados que pueden ser conectados juntos. Permiten que un cambio en un componente tenga un impacto mínimo en otros componentes.
+    5.2 Reusabilidad (Reusability)
+        Capacidad del producto software para ser utilizado en más de un sistema de software, o en la construcción de otros componentes de software. Se refiere a la capacidad de un componente o sistema para ser utilizado en más de un sistema de software, o en la construcción de otros componentes de software.
+    5.3 Analizabilidad (Analysability)
+        Capacidad del producto software para ser analizado para determinar las causas de los defectos o para identificar las partes a modificar para conseguir un cambio determinado. Facilidad con la que se puede evaluar el impacto de un cambio determinado sobre el resto del software, diagnosticar deficiencias o causas de fallos en el software, o identificar las partes a modificar.
+    5.4 Modificabilidad (Modifiability)
+        Capacidad del producto software para ser modificado efectiva y eficientemente, debido a necesidades evolutivas, correctivas o perfectivas. Facilidad con la que se pueden realizar cambios en el software, como correcciones, mejoras o adaptaciones del software a cambios en el entorno, y en los requisitos funcionales y no funcionales, sin introducir defectos o degradar la calidad interna.
+    5.5 Capacidad de prueba (Testability)
+        Capacidad del producto software para permitir que se realicen pruebas para determinar si se han alcanzado los objetivos de las pruebas y para detectar los defectos. Facilidad con la que se pueden establecer criterios de prueba para el software y determinar si se han alcanzado estos criterios.
+    
+    6. Portabilidad (Portability)
+    Capacidad del producto software para ser transferido de un entorno a otro. Se subdivide en:
+
+    6.1 Adaptabilidad (Adaptability)
+        Capacidad del producto software para ser adaptado para diferentes entornos de trabajo sin aplicar acciones o medios distintos de los proporcionados para este propósito para el software considerado. Facilidad con la que el software puede ser adaptado para diferentes entornos de trabajo.
+    6.2 Instalabilidad (Installability)
+        Capacidad del producto software para ser instalado en un entorno determinado. Facilidad con la que el software puede ser instalado y/o desinstalado en un entorno determinado.
+    6.3 Coexistencia (Co-existence)
+        Capacidad del producto software para coexistir con otros software independientes en un entorno común, compartiendo recursos comunes de manera competitiva. Facilidad con la que el software puede coexistir con otros software independientes en un entorno común, compartiendo recursos comunes de manera competitiva.
+    6.4 Reemplazabilidad (Replaceability)
+        Capacidad del producto software para ser utilizado en lugar de otro software determinado para llevar a cabo las mismas funciones en el mismo entorno. Facilidad con la que el software puede ser utilizado en lugar de otro software determinado para llevar a cabo las mismas funciones en el mismo entorno.
+    
+    7. Compatibilidad (Compatibility)
+    Capacidad del producto software para intercambiar información con otros productos, y/o realizar sus funciones requeridas, mientras comparte el mismo entorno hardware o software. Se subdivide en:
+
+    7.1 Coherencia (Coherence)
+        Capacidad del producto software para adherirse a estándares, convenciones o regulaciones relacionadas con la interoperabilidad del software con el que comparte un entorno común. Facilidad con la que el software puede adherirse a estándares, convenciones o regulaciones relacionadas con la interoperabilidad del software con el que comparte un entorno común.
+    7.2 Interoperabilidad (Interoperability)
+        Capacidad del producto software para intercambiar información con otros productos, y/o realizar sus funciones requeridas, mientras comparte el mismo entorno hardware o software. Facilidad con la que el software puede intercambiar información con otros productos, y/o realizar sus funciones requeridas, mientras comparte el mismo entorno hardware o software.
+    
+    8. Usabilidad (Usability)
+    Capacidad del producto software para ser entendido, aprendido, usado y ser atractivo para el usuario, cuando se usa bajo determinadas condiciones. Se subdivide en:
+
+    8.1 Inteligibilidad (Understandability)
+        Capacidad del producto software para permitir que el usuario entienda si el software es adecuado, y cómo puede ser usado para tareas y condiciones de uso particulares. Facilidad con la que el usuario puede entender si el software es adecuado, y cómo puede ser usado para tareas y condiciones de uso particulares.
+    8.2 Aprendibilidad (Learnability)
+        Capacidad del producto software para permitir que el usuario aprenda su aplicación. Facilidad con la que el usuario puede aprender a usar la aplicación.
+    8.3 Operabilidad (Operability)
+        Capacidad del producto software para permitir que el usuario opere y controle el software. Facilidad con la que el usuario puede operar y controlar la aplicación para sus tareas y condiciones de uso particulares.
+    8.4 Atractividad (Attractiveness)
+        Capacidad del producto software para ser atractivo para el usuario. Facilidad con la que el usuario se siente atraído por la aplicación.
+
+## 3. ¿Qué es testing?
+
+    En 2020 Nissan debió retirar más de 1 millón de autos debido a una falla de software en los detectores sensoriales de las bolsas de aire, varios accidentes se reportaron debido a esta falla que podría haberse prevenido.
+
+    El testing se desarrolla en paralelo al desarrollo de software. Es decir que a medida que se construye el producto se van realizando pruebas para verificar que el software cumpla con los requisitos y funcione correctamente.
+
+    Así se previenen incidencias de funcionalidad.
+    Se corrigen desviaciones de los requisitos, o del software.
+
+    Errores: Pueden ser costosos y peligrosos.
+
+    Un error muy común es realizar los testeos al final del desarrollo, lo que puede generar que se deba volver a etapas anteriores para corregir errores.
+
+    Las actividades tempranas de testing ayudan a:
+    - Mitigar errores a tiempo.
+    - Evitar grandes desvíos en el proyecto.
+    - Reducir costos.
+    - Mejorar la calidad del producto.
+
+    La implementación de testing desde 0 es una tarea compleja que toma tiempo y requiere de un equipo de trabajo especializado.
+
+    La idea es evitar que los errores o puntos vulnerables en el desarrollo del proyecto lleguen a la persona usuaria.
+
+  ### Un buen test debe cumplir:
+    1. No testear únicamente los casos positivos (los que se espera que funcionen), también es necesario abordar los casos negativos (los que no se espera que funcionen).
+    2. QUe las pruebas que se hagan sean independientes entre sí. La idea es que no dependan de otra para poder realizar la prueba (reducir al mínimo las dependencias para poder realizar un test).
+    
